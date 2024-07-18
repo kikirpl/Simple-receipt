@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-item">
+        <div class="form-header">
+          <h1>Kuitansi cetak</h1>
+          <hr />
+        </div>
+        <div class="form-box">
+          <div class="form-item">
+            <label for="">nama</label>
+            <input type="text" id="nama" placeholder="masukan nama anda" />
+          </div>
+          <div class="form-item">
+            <label for="">barang</label>
+            <input
+              type="text"
+              id="barang"
+              placeholder="masukan nama barang anda"
+            />
+          </div>
+          <div class="form-item">
+            <label for="">Harga</label>
+            <input type="text" id="harga" placeholder="masukan harga barang" />
+          </div>
+          <div class="form-item">
+            <button id="btnSubmit">Kirim</button>
+          </div>
+        </div>
+        <hr />
+        <div class="cart-box">
+          <div class="cart-heading">
+            <h3>Carts :</h3>
+            <span id="namaCart"> </span>
+          </div>
+          <div class="cart-table">
+            <table border="1" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>id</th>
+                  <th>Nama</th>
+                  <th>Harga</th>
+                </tr>
+              </thead>
+              <tbody id="tBody">
+                <!-- <tr>
+                  <td>1</td>
+                  <td>Laptop</td>
+                  <td>Rp. 5000</td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="submit-print">
+          <button id="btnPrint">Cetak</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
